@@ -4,7 +4,7 @@ import { createWorkspaceState, restoreWorkspace } from './workspaceState'
 describe('workspace state', () => {
   it('creates independent shared and 2025 rankings', () => {
     const workspace = createWorkspaceState()
-    expect(workspace.rankings.shared.containers.unassigned).toHaveLength(43)
+    expect(workspace.rankings.shared.containers.unassigned).toHaveLength(49)
     expect(workspace.rankings.year2025.containers.unassigned).toHaveLength(16)
     expect(workspace.rankings.year2025.containers.unassigned).toEqual(
       expect.not.arrayContaining(['bgm-1014']),

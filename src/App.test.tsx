@@ -6,14 +6,14 @@ import { LEGACY_STORAGE_KEY, STORAGE_KEY, TIERS } from './constants'
 describe('App', () => {
   beforeEach(() => localStorage.clear())
 
-  it('renders all six tiers and 43 unassigned anime', () => {
+  it('renders all six tiers and 49 unassigned anime', () => {
     render(<App />)
 
     for (const tier of TIERS) {
       expect(within(screen.getByTestId(`tier-${tier.id}`)).getByText(tier.label)).toBeInTheDocument()
     }
-    expect(screen.getByTestId('unassigned-count')).toHaveTextContent('43')
-    expect(screen.getAllByTestId(/^anime-card-/)).toHaveLength(43)
+    expect(screen.getByTestId('unassigned-count')).toHaveTextContent('49')
+    expect(screen.getAllByTestId(/^anime-card-/)).toHaveLength(49)
     expect(screen.getByRole('tab', { name: /共同看过的番/ })).toHaveAttribute('aria-selected', 'true')
   })
 
@@ -48,7 +48,7 @@ describe('App', () => {
     render(<App />)
 
     expect(within(screen.getByTestId('tier-epic')).getByText('魔法禁书目录')).toBeInTheDocument()
-    expect(screen.getByTestId('unassigned-count')).toHaveTextContent('42')
+    expect(screen.getByTestId('unassigned-count')).toHaveTextContent('48')
   })
 
   it('migrates the previous single-library save into the shared library', () => {
