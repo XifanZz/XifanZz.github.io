@@ -19,7 +19,6 @@ export interface Anime {
 export interface TierDefinition {
   id: TierId
   label: string
-  kicker: string
   color: string
 }
 

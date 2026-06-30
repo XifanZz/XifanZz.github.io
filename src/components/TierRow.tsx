@@ -21,7 +21,6 @@ export function TierRow({ tier, animeIds, highlighted }: TierRowProps) {
     >
       <header className="tier-label">
         <strong>{tier.label}</strong>
-        <span>{tier.kicker}</span>
         <em>{animeIds.length}</em>
       </header>
       <div ref={setNodeRef} className="tier-dropzone">

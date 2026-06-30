@@ -458,14 +458,6 @@ a:focus-visible,
   text-shadow: 1px 2px 0 rgba(255, 255, 255, 0.38);
 }
 
-.tier-label span {
-  z-index: 1;
-  margin-top: 7px;
-  font-size: 10px;
-  font-weight: 800;
-  opacity: 0.72;
-}
-
 .tier-label em {
   position: absolute;
   right: 10px;
@@ -886,13 +878,6 @@ a:focus-visible,
   font-weight: 950;
 }
 
-.export-tier > header span {
-  margin-top: 8px;
-  font-size: 11px;
-  font-weight: 800;
-  opacity: .68;
-}
-
 .export-grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -1097,10 +1082,6 @@ a:focus-visible,
 
   .tier-label strong {
     font-size: 20px;
-  }
-
-  .tier-label span {
-    margin: 1px 0 0 12px;
   }
 
   .tier-label em {

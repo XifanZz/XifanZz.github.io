@@ -44,7 +44,6 @@ export const ExportBoard = forwardRef<HTMLDivElement, { state: TierState; librar
             >
               <header>
                 <strong>{tier.label}</strong>
-                <span>{tier.kicker}</span>
               </header>
               <div className="export-grid">
                 {state.containers[tier.id].length > 0 ? (
