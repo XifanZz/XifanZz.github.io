@@ -4,7 +4,7 @@ import type { Anime, AnimeLibrary } from '../types'
 export const ANIME = catalog as Anime[]
 export const ANIME_IDS = ANIME.map((anime) => anime.id)
 export const ANIME_BY_ID = new Map(ANIME.map((anime) => [anime.id, anime]))
-export const CATALOG_YEARS = [...new Set(ANIME.map((anime) => anime.year))]
+export const CATALOG_YEARS = [...new Set(ANIME.map((anime) => anime.year))].sort((a, b) => a - b)
 
 export const LIBRARIES: AnimeLibrary[] = [
   {
